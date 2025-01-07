@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML='Nuevo Título'"> <!-- Se puede acceder directamente al script mediante 'this', aunque no es una buena práctica -->
+        Título
+    </h1>
+
+    <h1 id="titulo">
+        Título secundario
+    </h1>
+
+    <script>
+
+        //onclick
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        function cambiarTexto(titulo){
+            document.getElementById('titulo').innerHTML = 'Nuevo contenido' 
+        }
+
+        //onload
+        function entrar(){
+            alert('Entrando a la página web');
+            let texto = '';
+
+            if (navigator.cookieEnabled){
+                texto = 'Cookies habilitadas';
+                } else {
+                    texto = 'Cookies deshabilitadas';
+            }
+        }
+
+        document.onload = entrar(); //Se ejecuta al cargar la página
+
+        //onchange
+        function convertir(titulo){
+            document.getElementById('titulo');
+            titulo.value = titulo.value.toUpperCase()
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Saludos.</p>
+    <p class="p2">
+        Putos
+    </p>
+
+    <script>
+        let parrafo = document.getElementById('p1').innerHTML; //Recupera el valor
+        console.log(parrafo); //Imprime el valor en la consola
+        let parrafo2 = document.getElementsByClassName('p2').innerHTML;
+        console.log(parrafo2);
+        let parrafo3 = document.querySelectorAll('h1.parrafo2');
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">
+        Titulo
+    </h1>
+
+    Nombre: <input type="text" id="nombre">
+
+    <script>
+        document.getElementById('nombre').addEventListener('focus', cambiarFondo); //No se requiere usar el prefijo 'on'
+        function cambiarFondo(evento) {
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+
+        document.getElementById('nombre').addEventListener('blur', (cambiarFondo) => evento.target.style.background = 'blue'); //No se requiere usar el prefijo 'on'
+    </script>
+</body>
+</html>
+</body>
+</html>
