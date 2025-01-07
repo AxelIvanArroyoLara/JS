@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container-frame {
+    width: 50vh;
+    height: 50vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-display {
+    height: 80px;
+    background-color: #282c34;
+    color: #ffffff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.container-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); /* 5 filas de igual altura */
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-grow: 1; /* Permite que los botones llenen el espacio restante */
+}
+
+.button {
+    background-color: #f0f0f0;
+    font-size: 1.2rem;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    user-select: none;
+    height: 100%; /* Asegura que cada botón ocupe toda la celda */
+}
+
+.button:active {
+    background-color: #d6d6d6;
+}
+
+#DEL, #AC {
+    background-color: #ff5c5c;
+    color: #ffffff;
+}
+
+#DEL:hover, #AC:hover {
+    background-color: #ff3b3b;
+}
+
+#equals {
+    background-color: #4caf50;
+    color: #ffffff;
+    grid-column: span 1; /* Ocupa 2 columnas */
+}
+
+#equals:hover {
+    background-color: #45a049;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
